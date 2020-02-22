@@ -86,7 +86,7 @@
                        <label>Bank Name</label>
                        <select class="form-control" formControlName="bankName">
                            <option value="">Select Bank</option>
-                           <option *ngFor="let bank of banks" [value]="bank.bankName">{{bank.bankName}}</option>
+                           <option *ngFor="let bank of banks">{{bank.bankName}}</option>
                            </select>
                        <small [class.hidden]="registrationForm.get('bankDet').get('bankName').valid 
                        || registrationForm.get('bankDet').get('bankName').untouched" 

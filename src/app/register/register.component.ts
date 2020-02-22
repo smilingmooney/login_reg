@@ -69,6 +69,7 @@ export class RegisterComponent implements OnInit {
     
   ngOnInit() {
     this.banks=this.bankProviderService.getBanks();
+    console.log(this.banks);
   }
 
   onSubmit()
